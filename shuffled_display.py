@@ -4,8 +4,7 @@ import string
 
 
 
-def print_names(alphabet = string.ascii_letters, time_character = 0.003):
-    name = input("digite algo: ")
+def print_names(name, alphabet = string.ascii_letters, time_character = 0.01):
     lista_original = ([*name])
     lista_shuffle = [*alphabet]
     random.shuffle(lista_shuffle)
@@ -29,6 +28,6 @@ def print_names(alphabet = string.ascii_letters, time_character = 0.003):
         else:
             feito += ' '
 
-if "__main__" == __name__:
-    print_names()
 
+
+print_names('write the sentence here')
